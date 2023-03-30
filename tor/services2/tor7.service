@@ -1,0 +1,8 @@
+[Unit]
+Description=Tor Daemon 7
+
+[Service]
+ExecStart=/usr/bin/tor -f /etc/tor/torrc.7
+
+[Install]
+WantedBy=multi-user.target

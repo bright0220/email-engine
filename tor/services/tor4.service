@@ -1,0 +1,8 @@
+[Unit]
+Description=Tor Daemon 4
+
+[Service]
+ExecStart=/usr/bin/tor -f /root/tor/torrc.4
+
+[Install]
+WantedBy=multi-user.target

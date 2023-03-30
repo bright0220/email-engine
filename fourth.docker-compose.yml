@@ -1,0 +1,234 @@
+version: '3'
+services:
+  worker1:
+    image: mailtester2/engine:worker
+    container_name: worker1
+    command: npm run worker
+    restart: always
+    network_mode: "host"
+    environment:
+      - RELAY_ID=4
+      - TOR_ID=1
+      - MONGODB_URI=mongodb://mongo:ufckRgauWqRwtirmMiNk!!@95.216.198.65:27018/test?authSource=admin
+      - REDIS_URL=redis://95.216.198.65:6380
+      - IP=37.59.151.104
+      - RDNS=ip104.ip-37-59-151.eu
+      - SOCKS_PROXY_SERVER=socks5://localhost:9050
+      - HEADLESS_HOST=http://localhost:3102
+  worker2:
+    image: mailtester2/engine:worker
+    container_name: worker2
+    command: npm run worker
+    restart: always
+    network_mode: "host"
+    environment:
+      - RELAY_ID=4
+      - TOR_ID=2
+      - MONGODB_URI=mongodb://mongo:ufckRgauWqRwtirmMiNk!!@95.216.198.65:27018/test?authSource=admin
+      - REDIS_URL=redis://95.216.198.65:6380
+      - IP=37.59.151.105
+      - RDNS=ip105.ip-37-59-151.eu
+      - SOCKS_PROXY_SERVER=socks5://localhost:9050
+      - HEADLESS_HOST=http://localhost:3102
+  worker3:
+    image: mailtester2/engine:worker
+    container_name: worker3
+    command: npm run worker
+    restart: always
+    network_mode: "host"
+    environment:
+      - RELAY_ID=4
+      - TOR_ID=3
+      - MONGODB_URI=mongodb://mongo:ufckRgauWqRwtirmMiNk!!@95.216.198.65:27018/test?authSource=admin
+      - REDIS_URL=redis://95.216.198.65:6380
+      - IP=37.59.151.106
+      - RDNS=ip106.ip-37-59-151.eu
+      - SOCKS_PROXY_SERVER=socks5://localhost:9050
+      - HEADLESS_HOST=http://localhost:3102
+  worker4:
+    image: mailtester2/engine:worker
+    container_name: worker4
+    command: npm run worker
+    restart: always
+    network_mode: "host"
+    environment:
+      - RELAY_ID=4
+      - TOR_ID=4
+      - MONGODB_URI=mongodb://mongo:ufckRgauWqRwtirmMiNk!!@95.216.198.65:27018/test?authSource=admin
+      - REDIS_URL=redis://95.216.198.65:6380
+      - IP=37.59.151.107
+      - RDNS=ip107.ip-37-59-151.eu
+      - SOCKS_PROXY_SERVER=socks5://localhost:9050
+      - HEADLESS_HOST=http://localhost:3102
+  worker5:
+    image: mailtester2/engine:worker
+    container_name: worker5
+    command: npm run worker
+    restart: always
+    network_mode: "host"
+    environment:
+      - RELAY_ID=4
+      - TOR_ID=5
+      - MONGODB_URI=mongodb://mongo:ufckRgauWqRwtirmMiNk!!@95.216.198.65:27018/test?authSource=admin
+      - REDIS_URL=redis://95.216.198.65:6380
+      - IP=37.59.151.108
+      - RDNS=ip108.ip-37-59-151.eu
+      - SOCKS_PROXY_SERVER=socks5://localhost:9050
+      - HEADLESS_HOST=http://localhost:3102
+  worker6:
+    image: mailtester2/engine:worker
+    container_name: worker6
+    command: npm run worker
+    restart: always
+    network_mode: "host"
+    environment:
+      - RELAY_ID=4
+      - TOR_ID=6
+      - MONGODB_URI=mongodb://mongo:ufckRgauWqRwtirmMiNk!!@95.216.198.65:27018/test?authSource=admin
+      - REDIS_URL=redis://95.216.198.65:6380
+      - IP=37.59.151.109
+      - RDNS=ip109.ip-37-59-151.eu
+      - SOCKS_PROXY_SERVER=socks5://localhost:9050
+      - HEADLESS_HOST=http://localhost:3102
+  worker7:
+    image: mailtester2/engine:worker
+    container_name: worker7
+    command: npm run worker
+    restart: always
+    network_mode: "host"
+    environment:
+      - RELAY_ID=4
+      - TOR_ID=7
+      - MONGODB_URI=mongodb://mongo:ufckRgauWqRwtirmMiNk!!@95.216.198.65:27018/test?authSource=admin
+      - REDIS_URL=redis://95.216.198.65:6380
+      - IP=37.59.151.110
+      - RDNS=ip110.ip-37-59-151.eu
+      - SOCKS_PROXY_SERVER=socks5://localhost:9050
+      - HEADLESS_HOST=http://localhost:3102
+  worker8:
+    image: mailtester2/engine:worker
+    container_name: worker8
+    command: npm run worker
+    restart: always
+    network_mode: "host"
+    environment:
+      - RELAY_ID=4
+      - TOR_ID=8
+      - MONGODB_URI=mongodb://mongo:ufckRgauWqRwtirmMiNk!!@95.216.198.65:27018/test?authSource=admin
+      - REDIS_URL=redis://95.216.198.65:6380
+      - IP=37.59.151.111
+      - RDNS=ip111.ip-37-59-151.eu
+      - SOCKS_PROXY_SERVER=socks5://localhost:9050
+      - HEADLESS_HOST=http://localhost:3102
+  # worker9:
+  #   image: mailtester2/engine:worker
+  #   container_name: worker9
+  #   command: npm run worker
+  #   restart: always
+  #   network_mode: "host"
+  #   environment:
+  #     - TOR_ID=1
+  #     - MONGODB_URI=mongodb://mongo:ufckRgauWqRwtirmMiNk!!@95.216.198.65:27018/test?authSource=admin
+  #     - REDIS_URL=redis://95.216.198.65:6380
+  #     - IP=176.31.218.168
+  #     - RDNS=ip168.ip-176-31-218.eu
+  #     - SOCKS_PROXY_SERVER=socks5://localhost:9050
+  #     - HEADLESS_HOST=http://localhost:3102
+  # worker10:
+  #   image: mailtester2/engine:worker
+  #   container_name: worker10
+  #   command: npm run worker
+  #   restart: always
+  #   network_mode: "host"
+  #   environment:
+  #     - TOR_ID=2
+  #     - MONGODB_URI=mongodb://mongo:ufckRgauWqRwtirmMiNk!!@95.216.198.65:27018/test?authSource=admin
+  #     - REDIS_URL=redis://95.216.198.65:6380
+  #     - IP=176.31.218.169
+  #     - RDNS=ip169.ip-176-31-218.eu
+  #     - SOCKS_PROXY_SERVER=socks5://localhost:9050
+  #     - HEADLESS_HOST=http://localhost:3102
+  # worker11:
+  #   image: mailtester2/engine:worker
+  #   container_name: worker11
+  #   command: npm run worker
+  #   restart: always
+  #   network_mode: "host"
+  #   environment:
+  #     - TOR_ID=3
+  #     - MONGODB_URI=mongodb://mongo:ufckRgauWqRwtirmMiNk!!@95.216.198.65:27018/test?authSource=admin
+  #     - REDIS_URL=redis://95.216.198.65:6380
+  #     - IP=176.31.218.170
+  #     - RDNS=ip170.ip-176-31-218.eu
+  #     - SOCKS_PROXY_SERVER=socks5://localhost:9050
+  #     - HEADLESS_HOST=http://localhost:3102
+  # worker12:
+  #   image: mailtester2/engine:worker
+  #   container_name: worker12
+  #   command: npm run worker
+  #   restart: always
+  #   network_mode: "host"
+  #   environment:
+  #     - TOR_ID=4
+  #     - MONGODB_URI=mongodb://mongo:ufckRgauWqRwtirmMiNk!!@95.216.198.65:27018/test?authSource=admin
+  #     - REDIS_URL=redis://95.216.198.65:6380
+  #     - IP=176.31.218.171
+  #     - RDNS=ip171.ip-176-31-218.eu
+  #     - SOCKS_PROXY_SERVER=socks5://localhost:9050
+  #     - HEADLESS_HOST=http://localhost:3102
+  # worker13:
+  #   image: mailtester2/engine:worker
+  #   container_name: worker13
+  #   command: npm run worker
+  #   restart: always
+  #   network_mode: "host"
+  #   environment:
+  #     - TOR_ID=5
+  #     - MONGODB_URI=mongodb://mongo:ufckRgauWqRwtirmMiNk!!@95.216.198.65:27018/test?authSource=admin
+  #     - REDIS_URL=redis://95.216.198.65:6380
+  #     - IP=176.31.218.172
+  #     - RDNS=ip172.ip-176-31-218.eu
+  #     - SOCKS_PROXY_SERVER=socks5://localhost:9050
+  #     - HEADLESS_HOST=http://localhost:3102
+  # worker14:
+  #   image: mailtester2/engine:worker
+  #   container_name: worker14
+  #   command: npm run worker
+  #   restart: always
+  #   network_mode: "host"
+  #   environment:
+  #     - TOR_ID=6
+  #     - MONGODB_URI=mongodb://mongo:ufckRgauWqRwtirmMiNk!!@95.216.198.65:27018/test?authSource=admin
+  #     - REDIS_URL=redis://95.216.198.65:6380
+  #     - IP=176.31.218.173
+  #     - RDNS=ip173.ip-176-31-218.eu
+  #     - SOCKS_PROXY_SERVER=socks5://localhost:9050
+  #     - HEADLESS_HOST=http://localhost:3102
+  # worker15:
+  #   image: mailtester2/engine:worker
+  #   container_name: worker15
+  #   command: npm run worker
+  #   restart: always
+  #   network_mode: "host"
+  #   environment:
+  #     - TOR_ID=7
+  #     - MONGODB_URI=mongodb://mongo:ufckRgauWqRwtirmMiNk!!@95.216.198.65:27018/test?authSource=admin
+  #     - REDIS_URL=redis://95.216.198.65:6380
+  #     - IP=176.31.218.174
+  #     - RDNS=ip174.ip-176-31-218.eu
+  #     - SOCKS_PROXY_SERVER=socks5://localhost:9050
+  #     - HEADLESS_HOST=http://localhost:3102
+  # worker16:
+  #   image: mailtester2/engine:worker
+  #   container_name: worker16
+  #   command: npm run worker
+  #   restart: always
+  #   network_mode: "host"
+  #   environment:
+  #     - TOR_ID=8
+  #     - MONGODB_URI=mongodb://mongo:ufckRgauWqRwtirmMiNk!!@95.216.198.65:27018/test?authSource=admin
+  #     - REDIS_URL=redis://95.216.198.65:6380
+  #     - IP=176.31.218.175
+  #     - RDNS=ip175.ip-176-31-218.eu
+  #     - SOCKS_PROXY_SERVER=socks5://localhost:9050
+  #     - HEADLESS_HOST=http://localhost:3102

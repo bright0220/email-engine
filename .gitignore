@@ -1,0 +1,8 @@
+node_modules
+build
+assets/spamtraps.txt
+assets/skynet60k.csv
+assets/skynet60k-sorted.csv
+assets/spamtraps-skynet-sorted.txt
+assets/spamtraps-skynet.txt
+.env
